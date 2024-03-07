@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>HTML Test</title>
+  <meta charset="UTF-8">
+  <style type="text/css">
+     /* 元素选择器 */
+     h3 {text-align:left}
+     p,h1,h2 {text-align:center;}
+     /* 类选择器 */
+     .tst1 {text-align:center;}
+     /* ID选择器，每个页面只有一个元素能用ID */
+     #abc1 {teat-align:center;}
+     h1#abc1 {color:red;}
+     /* 通用选择器，所有元素都会接收到 */
+     *{color: red;}
+     /* 后代选择器 */
+     div strong {color: blue;}
+     /* 伪选择器 */
+     a:link {color:green}
+     a:visited {color:red}
+     p:hover {color:red; font-size:50px;}
+  </style>
+ </head>
+ <body>
+
+
+<div>
+  <h1 id="abc1">Both style declarations apply.</h1>
+  <h2 id="abc1">Only one style declaration apply.</h2>
+  <h3 class="tst1">The is h3 element.</h3>
+  <p class="tst1">Style applies to this element.</p>
+</div>
+
+<div><p>The red style <strong>has been applied to this element.</strong></p></div>
+  <p>The red style <strong>has not been applied to this element.</strong></p>
+
+<a href="http://by.cuc.edu.cn/">Visit CUC website.</a>
+<p>The red is applied when the mouse cursor hovers over this element.</p>
+</body>
+</html>
