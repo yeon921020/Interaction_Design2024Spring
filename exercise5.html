@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CSS Position</title>
+    <style type="text/css">
+      /* 绝对定位，如父容器设置了relative或absolute的偏移，则会根据父容器进行偏移；
+      如父容器未设置position属性，则以body为基准偏移。
+      设置absolute属性的元素在标准流中不占位置。 */
+      body{
+        margin:20px;
+        border:solid 1px black;
+      }
+      .container{
+        position:relative;
+        margin:30px;
+        border:solid 1px orange;
+        padding:10px;
+      }
+      .box1{
+        width:100px;
+        height:100px;
+        background:blue;
+      }
+      .box2{
+        width:100px;
+        height:100px;
+        background:green;
+        border:yellow solid;
+        position:absolute;
+        left:40px;
+        top:40px;
+      }
+      .box3{
+        width:100px;
+        height:100px;
+        background:red;
+      }
+      .box4{
+        width:100px;
+        height:100px;
+        background:pink;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box1"></div>
+      <div class="box2"></div>
+      <div class="box3"></div>
+      <div class="box4"></div>
+    </div>
+
+  </body>
+</html>
