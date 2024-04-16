@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>ChartJS</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.min.js" integrity="sha512-tQYZBKe34uzoeOjY9jr3MX7R/mo7n25vnqbnrkskGr4D6YOoPYSpyafUAzQVjV6xAozAqUFIEFsCO4z8mnVBXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  </head>
+  <body>
+    <canvas id="chart"></canvas>
+    <script>
+      let chart = document.getElementById('chart').getContext('2d');
+      let mychart = new Chart(chart, {
+        type:'bar',
+        data:{
+          labels:['Tokyo','Jakarta','Delhi','Manilla','Seoul'],
+          datasets:[{
+            label:'Population',
+            data:[
+              38050000,
+              32275000,
+              27280000,
+              24650000,
+              24210000
+            ],
+            backgroundColor:'green',
+            backgroundColor:[
+              'rgba(255,99,132,0.6)',
+              'rgba(54,162,235,0.6)',
+              'rgba(255,206,86,0.6)',
+              'rgba(75,192,192,0.6)',
+              'rgba(153,102,255,0.6)'
+            ],
+              }],
+              }
+              });
+    </script>
+  </body>
+</html>
